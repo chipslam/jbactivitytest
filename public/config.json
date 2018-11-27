@@ -35,12 +35,6 @@
                 }
 		  ],
           "url": "https://1706-laneige-dev.k2.digital/rest/zh/V1/offline_member/member/create",
-           "verb": "POST",
-            "body": "",
-            "header": "",
-            "format": "json",
-            "useJwt": true,
-            "timeout": 10000
         }
     },
     "configurationArguments": {
