@@ -17,11 +17,24 @@
         "execute": {
            "inArguments":[
 				{
-                    "emailAddress": "{{Contact.Attribute.CustomActivity.EmailAddress}}"
-                }									
+                    "vipcode": "LXX9901111"
+                },
+				{
+                    "email": "chipslam@testcustomeractivity.com"
+                },
+				{
+                    "source": "test"
+                },
+				{
+                    "title": "mr"
+                }
 			],
-          "outArguments": [],
-          "url": "https://mc.s10.exacttarget.com/journeybuilder/execute",
+          "outArguments": [
+				{
+                    "status": ""
+                }
+		  ],
+          "url": "https://1706-laneige-dev.k2.digital/rest/zh/V1/offline_member/member/create",
            "verb": "POST",
             "body": "",
             "header": "",
@@ -66,8 +79,45 @@
     "schema": {
         "arguments": {
             "execute": {
-                "inArguments": [],
-                "outArguments": []
+                "inArguments": [
+					{
+                        "vipcode": {
+							"dataType": "Text",
+							"isNullable": false,
+							"direction": "in"   
+                        }
+                    },				
+					{
+                        "email": {
+							"dataType": "Text",
+							"isNullable": false,
+							"direction": "in"   
+                        }
+                    },				
+					{
+                        "source": {
+							"dataType": "Text",
+							"isNullable": false,
+							"direction": "in"   
+                        }
+                    },				
+					{
+                        "title": {
+							"dataType": "Text",
+							"isNullable": false,
+							"direction": "in"   
+                        }
+                    }
+				],
+                "outArguments": [
+                    {
+						"status": {
+							"dataType": "Text",
+							"direction": "out",
+							"access": "visible"
+						}	
+					}	
+				]
             }
         }
     }
