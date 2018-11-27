@@ -35,27 +35,33 @@
                 }
 		  ],
           "url": "https://1706-laneige-dev.k2.digital/rest/zh/V1/offline_member/member/create",
+            "verb": "POST",
+            "body": "",
+            "header": "",
+            "format": "json",
+            "useJwt": false,
+            "timeout": 10000		  
         }
     },
     "configurationArguments": {
       "applicationExtensionKey": "2b7ac7e9-2c61-401f-a744-1181ff457369",
       "save": {
-        "url": "https://mc.s10.exacttarget.com/journeybuilder/save",
+        "url": "https://dashboard.heroku.com/apps/jbtestactivity/save",
           "verb": "POST",
         "useJwt": true
        },
        "publish": {
-        "url": "https://mc.s10.exacttarget.com/journeybuilder/publish",
+        "url": "https://dashboard.heroku.com/apps/jbtestactivity/publish",
            "verb": "POST",
         "useJwt": true
        },
       "stop": {
-        "url": "https://mc.s10.exacttarget.com/journeybuilder/stop",
+        "url": "https://dashboard.heroku.com/apps/jbtestactivity/stop",
            "verb": "POST",
         "useJwt": true
       },
       "validate": {
-        "url": "https://mc.s10.exacttarget.com/journeybuilder/validate",
+        "url": "https://dashboard.heroku.com/apps/jbtestactivity/validate",
         "verb": "POST",
         "useJwt": true
       }
