@@ -14,33 +14,24 @@
         }
     },
     "arguments": {
-        "execute": {
-           "inArguments":[
+		"execute": {
+			"inArguments":[
 				{
-                    "vipcode": "LXX9901111"
-                },
-				{
-                    "email": "chipslam@testcustomeractivity.com"
-                },
-				{
-                    "source": "test"
-                },
-				{
-                    "title": "mr"
-                }
+					"emails": "{{InteractionDefaults.Email}}"					
+				}
 			],
-          "outArguments": [
+			"outArguments": [
 				{
-                    "status": ""
-                }
-		  ],
-          "url": "https://1706-laneige-dev.k2.digital/rest/zh/V1/offline_member/member/create",
-            "verb": "POST",
-            "body": "",
-            "header": "",
-            "format": "json",
-            "useJwt": false,
-            "timeout": 10000		  
+					"status": ""
+				}
+			],
+			"url": "https://1706-laneige-dev.k2.digital/rest/zh/V1/offline_member/member/processed",
+			"verb": "POST",
+			"body": "",
+			"header": "",
+			"format": "json",
+			"useJwt": false,
+			"timeout": 10000		  
         }
     },
     "configurationArguments": {
@@ -81,28 +72,7 @@
             "execute": {
                 "inArguments": [
 					{
-                        "vipcode": {
-							"dataType": "Text",
-							"isNullable": false,
-							"direction": "in"   
-                        }
-                    },				
-					{
-                        "email": {
-							"dataType": "Text",
-							"isNullable": false,
-							"direction": "in"   
-                        }
-                    },				
-					{
-                        "source": {
-							"dataType": "Text",
-							"isNullable": false,
-							"direction": "in"   
-                        }
-                    },				
-					{
-                        "title": {
+                        "emails": {
 							"dataType": "Text",
 							"isNullable": false,
 							"direction": "in"   
