@@ -46,22 +46,22 @@
     "configurationArguments": {
       "applicationExtensionKey": "2b7ac7e9-2c61-401f-a744-1181ff457369",
       "save": {
-        "url": "https://dashboard.heroku.com/apps/jbactivitytest/save",
+        "url": "https://jbactivitytest.herokuapp.com/save",
           "verb": "POST",
         "useJwt": true
        },
        "publish": {
-        "url": "https://dashboard.heroku.com/apps/jbactivitytest/publish",
+        "url": "https://jbactivitytest.herokuapp.com/publish",
            "verb": "POST",
         "useJwt": true
        },
       "stop": {
-        "url": "https://dashboard.heroku.com/apps/jbactivitytest/stop",
+        "url": "https://jbactivitytest.herokuapp.com/stop",
            "verb": "POST",
         "useJwt": true
       },
       "validate": {
-        "url": "https://dashboard.heroku.com/apps/jbactivitytest/validate",
+        "url": "https://jbactivitytest.herokuapp.com/validate",
         "verb": "POST",
         "useJwt": true
       }
