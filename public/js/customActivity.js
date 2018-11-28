@@ -70,11 +70,7 @@ define([
         var postcardTextValue = $('#postcard-text').val();
 
         payload['arguments'].execute.inArguments = [{
-            "tokens": authTokens,
-			"vipcode": "LXX9901111"	,
-			"email": "chipslam@testcustomeractivity.com" ,
-			"source": "test" ,
-			"title": "mr"
+            "tokens": authTokens 
         }];
         
         payload['metaData'].isConfigured = true;
